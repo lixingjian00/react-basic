@@ -22,17 +22,17 @@ class HelloComponent extends React.Component{
     }
 }
 function App() {
-  return (
-    <div className="App">
-        <Hello></Hello>
-        {/* 渲染函数组件 */}
-        <Hello/>
-        {/*渲染类组件*/}
-        <HelloComponent></HelloComponent>
+    return (
+        <div className="App">
+            <Hello></Hello>
+            {/* 渲染函数组件 */}
+            <Hello/>
+            {/*渲染类组件*/}
+            <HelloComponent></HelloComponent>
 
 
-    </div>
-  )
+        </div>
+    )
 }
 
 
