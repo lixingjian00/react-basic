@@ -1,3 +1,4 @@
+export default App;
 import React from "react";
 
 // 比如阻止默认行为
@@ -36,4 +37,3 @@ function App() {
 }
 
 
-export default App;
