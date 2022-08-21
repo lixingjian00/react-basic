@@ -35,10 +35,17 @@ class TestComponent extends React.Component{
         name: 'lydia'
     }
     // 定义事件回调函数
+    // class field写法，最规范的写法。对应第一个button
     changeName = () =>{
         // 3. 修改state的状态name
         // 不是this.state.name = 新name
         // 必须用setState
+        this.setState({
+            name: '李行健'
+        })
+    }
+    // 另一种写法，对应第二个button
+    changeName1 () {
         this.setState({
             name: '李行健'
         })
@@ -50,6 +57,8 @@ class TestComponent extends React.Component{
             this is a TestComponent
             当前name为：{this.state.name}
             <button onClick={this.changeName}>修改name</button>
+            {/*这样写的this还是指向TestComponent*/}
+            <button onClick={() => this.changeName1()}>修改name</button>
         </div>)
     }
 }
