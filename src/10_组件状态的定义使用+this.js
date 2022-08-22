@@ -32,7 +32,7 @@ class TestComponent extends React.Component{
     // 写个绝对属性就行
     state = {
         // 用对象的语法，定义各种各样属性，全都是当前组件的状态
-        name: 'lydia'
+        name: 'lydia',
     }
     // 定义事件回调函数
     // class field写法，最规范的写法。对应第一个button
@@ -50,16 +50,18 @@ class TestComponent extends React.Component{
             name: '李行健'
         })
     }
-
     render(){
         //2. 使用状态
-        return (<div>
-            this is a TestComponent
-            当前name为：{this.state.name}
-            <button onClick={this.changeName}>修改name</button>
-            {/*这样写的this还是指向TestComponent*/}
-            <button onClick={() => this.changeName1()}>修改name</button>
-        </div>)
+        return (
+            <div>
+                this is a TestComponent
+                当前name为：{this.state.name}
+                <button onClick={this.changeName}>修改name</button>
+                {/*这样写的this还是指向TestComponent*/}
+                <button onClick={() => this.changeName1()}>修改name</button>
+            </div>
+
+        )
     }
 }
 
