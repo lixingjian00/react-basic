@@ -5,8 +5,9 @@ import React from "react"
 function Son (props) {
     const {getSonMsg} = props
     // 3. 不想用箭头函数，太长了
+    const sonMsg = '这里是来自于子组件新定义函数的数据'
     function clickHandler() {
-        props.getSonMsg('这里是来自于子组件新定义函数的数据')
+        props.getSonMsg(sonMsg)
     }
 
     return (
