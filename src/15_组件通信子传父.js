@@ -4,11 +4,19 @@ import React from "react"
 
 function Son (props) {
     const {getSonMsg} = props
+    // 3. 不想用箭头函数，太长了
+    function clickHandler() {
+        props.getSonMsg('这里是来自于子组件新定义函数的数据')
+    }
+
     return (
         <div>
             this is Son
             {/*2. 用箭头函数，这个函数就能传实参了*/}
             <button onClick={() => getSonMsg('这里是来自于子组件的数据')}>
+                点我，给父亲传参
+            </button>
+            <button onClick={clickHandler}>
                 点我，给父亲传参
             </button>
         </div>
