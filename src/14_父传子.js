@@ -55,6 +55,7 @@ class SonC extends React.Component {
 // 1类组件的Son
 // 2.2 子属性要接数据，需要提供一个参数 props
 function SonF (props){
+    // 4 解构可以const {msg,list,userInfo,getMsg,child} = props，也可以用SonF( {msg,list,userInfo,getMsg,child})
     // 2.2 props是一个对象，里面存着通过父组件传入的所有数据
     //console.log(props)
     return (
