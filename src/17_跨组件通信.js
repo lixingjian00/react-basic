@@ -7,6 +7,10 @@ import React, {createContext} from "react"
 // 3 需要用到数据的组件使用Consumer包裹获取数据
 
 const {Provider, Consumer} = createContext()
+// 多context
+// const UserInfo = createContext()
+// const Role = createContext()
+// UserInfo.Provider blablabla
 
 function CompA () {
     return (
