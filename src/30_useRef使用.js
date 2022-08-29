@@ -23,6 +23,7 @@ class TestC extends React.Component {
 function App () {
     const testRef = useRef(null)
     const h1Ref = useRef(null)
+    // useEffect 是在dom渲染之后回调
     useEffect(() => {
         console.log(testRef.current)
         console.log(h1Ref.current)
