@@ -7,9 +7,10 @@ import React from "react"
 // b. 函数式组件直接通过参数获取props对象
 
 
-// 1APP 是父组件，Son是子组件
-// 1父组件需要用类，因为只有类才有状态
-// 1构建父子关系：子组件在父组件中渲染出来
+// 1 APP 是父组件，Son是子组件
+// 1 父组件需要用类，因为只有类才有状态
+// 1 构建父子关系：子组件在父组件中渲染出来
+//
 
 
 // 1函数式的Son
@@ -46,8 +47,6 @@ class SonC extends React.Component {
                 <button onClick={getMsg}>点我</button>
                 {child}
             </>
-
-
         )
     }
 }
