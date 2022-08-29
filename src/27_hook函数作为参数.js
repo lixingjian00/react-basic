@@ -16,7 +16,6 @@ function Counter (props) {
     )
 }
 function App () {
-
     return (
         <div>
             {/*count={}*/}
